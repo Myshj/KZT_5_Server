@@ -1,0 +1,21 @@
+﻿<Window x:Class="KZT_5_Server.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Server" Height="768" Width="995.5" WindowStartupLocation="CenterScreen" MinWidth="800" MinHeight="500">
+    <Grid Margin="0,0,2,0">
+        <Button x:Name="ButtonStartServer" Content="Start server" HorizontalAlignment="Left" Margin="251,360,0,0" VerticalAlignment="Top" Width="75" Click="ButtonStartServer_Click" IsEnabled="False"/>
+        <TextBox x:Name="TextBoxClients" Margin="0,449,376,-1" TextWrapping="Wrap"/>
+        <TextBox x:Name="TextBoxMatrixLeft" HorizontalAlignment="Left" Margin="10,57,0,507" TextWrapping="Wrap" Width="320" FontFamily="Consolas"/>
+        <Button x:Name="GenerateLeft" Content="Generate" HorizontalAlignment="Left" Margin="116,242,0,0" VerticalAlignment="Top" Width="100" Click="ButtonGenerate_Click"/>
+        <TextBox x:Name="TextBoxMatrixRight" HorizontalAlignment="Left" Margin="335,57,0,507" TextWrapping="Wrap" Width="320" FontFamily="Consolas"/>
+        <TextBox x:Name="TextBoxMatrixResult" HorizontalAlignment="Left" Margin="660,57,-3,507" TextWrapping="Wrap" Width="320" FontFamily="Consolas"/>
+        <Label x:Name="label" Content="Left" HorizontalAlignment="Left" Margin="144,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="label_Copy" Content="Right" HorizontalAlignment="Left" Margin="458,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="label_Copy1" Content="Result" HorizontalAlignment="Left" Margin="780,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="GenerateRight" Content="Generate" HorizontalAlignment="Left" Margin="442,242,0,0" VerticalAlignment="Top" Width="100" Click="GenerateRightMatrix"/>
+
+    </Grid>
+</Window>
